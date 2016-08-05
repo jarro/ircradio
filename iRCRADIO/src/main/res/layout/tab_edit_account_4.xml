@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="6dp">
+
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_reconnect" />
+
+            <CheckBox
+                android:id="@+id/reconnect"
+                android:padding="3dip" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_reconnectinterval" />
+
+            <EditText
+                android:id="@+id/reconnectinterval"
+                style="@style/wfill_hwrap"
+                android:inputType="number"
+                android:text="30" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_reconnectretries" />
+
+            <EditText
+                android:id="@+id/reconnectretries"
+                style="@style/wfill_hwrap"
+                android:inputType="number"
+                android:text="12" />
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

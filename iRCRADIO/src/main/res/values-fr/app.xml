@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_url">http://android.earthflare.com/ircradio</string>
+<string name="app_eventurl">http://android.earthflare.com/ircevent/events</string>
+<string name="app_clause">Earth Flare\n2009</string>
+<string name="app_name">IRC Radio</string>
+<string name="drawer_open">Tiroir Ouvert</string>
+<string name="drawer_close">Tiroir Fermez</string>
+</resources>

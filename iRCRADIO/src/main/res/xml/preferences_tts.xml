@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_saynick"
+        android:summary="@string/pref_summary_saynick"
+        android:title="@string/pref_title_saynick" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_replacechat"
+        android:summary="@string/pref_summary_replacechat"
+        android:title="@string/pref_title_replacechat" />
+    <PreferenceScreen
+        android:key="pc_ttspreferences_ttsspeak"
+        android:summary="@string/pref_ttsspeak_summary_ttsspeakmessagetype"
+        android:title="@string/pref_ttsspeak_ttsspeakmessagetype" />
+    <EditTextPreference
+        android:defaultValue="1"
+        android:inputType="numberDecimal"
+        android:key="pref_pitch"
+        android:summary="@string/pref_summary_ttspitch"
+        android:title="@string/pref_title_ttspitch"></EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="1"
+        android:inputType="numberDecimal"
+        android:key="pref_speed"
+        android:summary="@string/pref_summary_ttsspeed"
+        android:title="@string/pref_title_ttsspeed"></EditTextPreference>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_headphonemute"
+        android:summary="@string/pref_summary_headphonemute"
+        android:title="@string/pref_title_headphonemute" />
+
+
+</PreferenceScreen>

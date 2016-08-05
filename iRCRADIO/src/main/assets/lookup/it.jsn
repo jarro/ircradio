@@ -1,0 +1,45 @@
+{
+  "code": "it",
+  "ircMap": {
+    "hasjoinedthechannel": "ha aderito al canale",
+    "says": "dice",
+    "youwerekickedby": "vi sono stati cacciati da",
+    "from": "da",
+    "for": "per",
+    "waskickedby": "è stato preso a calci dai",
+    "hasleftthechannel": "ha lasciato il canale",
+    "hasquit": "ha lasciato",
+    "notice": "notifica",
+    "partmessage" : "devono continuare a muoversi",
+    "youhavejoined" : "vi hanno aderito canale",
+    "as" : "come",
+    "nowtalkingin" : "ora parla in",
+    "kickedby" : "calciato da",
+    "kicks" : "calci",
+    "newnoticefrom" : "nuovo avviso da",
+    "newprivatemessagefrom" : "nuovo messaggio privato da",
+    "setsmode" : "modalità set",
+    "invitedyouto" : "ti ha invitato a",
+    "invited" : "invitato",
+    "tojoinchannel" : "collegarsi al canale"
+  },
+  "startswithMap": {
+    "http": "Link web",
+    "www.": "Link web"
+  },
+  "replaceMap": {
+    "..":",",
+    "...":",",
+
+    ":)": "sorrisi",
+    ":-)": "sorrisi",
+    ":>": "sorrisi",
+    ":-p": "bastoni fuori la lingua",
+    ":p": "bastoni fuori la lingua",
+    ":P": "bastoni fuori la lingua",
+    ";)": "strizzatine d'occhio",
+    ";-)": "strizzatine d'occhio",
+    ":(": "aggrotta le sopracciglia"
+
+  }
+}

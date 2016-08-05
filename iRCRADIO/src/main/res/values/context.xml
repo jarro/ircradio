@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="ctx_title_channelmenu">Channel Menu</string>
+<string name="ctx_title_servermenu">Server Menu</string>
+<string name="ctx_title_notifications">Notifications</string>
+<string name="ctx_activatespeech">Activate Speech</string>
+<string name="ctx_close">Close</string>
+<string name="ctx_clear">Clear</string>
+<string name="ctx_part">Part</string>
+<string name="ctx_edit">Edit</string>
+<string name="ctx_delete">Delete</string>
+<string name="ctx_addchannel">Add Channel</string>
+<string name="ctx_connect">Connect</string>
+<string name="ctx_disconnect">Disconnect</string>
+<string name="ctx_viewlog">View Log</string>
+<string name="ctx_joinchannel">Join Channel</string>
+<string name="ctx_gettopic">Get Topic</string>
+<string name="ctx_viewmessages">View Messages</string>
+<string name="ctx_viewmessage">View Message</string>
+<string name="ctx_copy">Copy</string>
+</resources>

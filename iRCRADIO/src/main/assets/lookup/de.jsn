@@ -1,0 +1,43 @@
+{
+  "code": "de",
+  "ircMap": {
+    "hasjoinedthechannel": "hat der Kanal angeschlossen",
+    "says": "sagt",
+    "youwerekickedby": "sie wurden mit Füßen getreten von",
+    "from": "von",
+    "for": "für",
+    "waskickedby": "gekickt wurde durch",
+    "hasleftthechannel": "hat der Kanal links",
+    "hasquit": "ist beendet",
+    "notice": "notiz",
+    "partmessage" : "muss in Bewegung bleiben ...",
+    "youhavejoined" : "Sie Kanal angeschlossen haben",
+    "as" : "als",
+    "nowtalkingin" : "Jetzt sprechen in",
+    "kickedby" : "durch gekickt",
+    "kicks" : "Tritte",
+    "newnoticefrom" : "neue Mitteilung von",
+    "newprivatemessagefrom" : "neue Nachricht aus",
+    "setsmode" : "Sätze Modus",
+    "invitedyouto" : "Sie eingeladen,",
+    "invited" : "eingeladen",
+    "tojoinchannel" : "auf Kanal beitreten"
+  },
+  "startswithMap": {
+    "http": "web link"
+  },
+  "replaceMap": {
+    "..":",",
+    "...":",",
+    ":)": "lächeln",
+    ":-)": "lächeln",
+    ":>": "lächeln",
+    ":-p": "stöcke zunge raus",
+    ":p": "stöcke zunge raus",
+    ":P": "stöcke zunge raus",
+    ";)": "zwinkern",
+    ";-)": "zwinkern",
+    ":(": "runzelt die stirn"
+
+  }
+}

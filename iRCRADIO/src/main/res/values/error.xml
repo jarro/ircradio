@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="error_notconnectedtoserver">Not connected to server.</string>
+<string name="error_title_networkerror">Network Error</string>
+<string name="error_message_internetrequiredtodisplayinfopage">Internet required to display info page.</string>
+<string name="error_nickinuse">Requested nick in use."</string>
+<string name="error_ircservercouldnotbereached">IRC Server could not be reached.</string>
+<string name="error_ircservererror">IRC Server error.</string>
+<string name="error_nochatlogs">No chat logs to display.</string>
+</resources>

@@ -1,0 +1,91 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   >
+<ScrollView
+	android:layout_marginLeft="2dip" android:layout_marginRight="2dip"  
+   android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:layout_marginLeft="2dip" android:layout_marginRight="2dip">
+<TableLayout
+    android:id="@+id/body" 
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"> 
+ <TableRow>
+       <TextView
+           android:text="@string/ui_channel"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/channel"
+           android:text="#"
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:inputType="text"/>
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:text="@string/ui_channelpass"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/channelpass"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:inputType="textPassword"/>
+</TableRow>  
+     <TableRow>
+       <TextView
+           android:text="@string/ui_joinleave"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <CheckBox android:id="@+id/joinleave"
+           android:padding="3dip"
+       />
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:text="@string/ui_language"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+       <Spinner android:id="@+id/language"
+           android:padding="3dip"
+           android:entries="@array/languagestrings"/>
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:text="Auto-join"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+       <CheckBox android:id="@+id/autojoin"
+           android:padding="3dip"
+       />
+   </TableRow>
+
+
+   
+</TableLayout>
+</RelativeLayout>
+</ScrollView>
+<LinearLayout android:layout_width="fill_parent" android:layout_weight="0"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		style="@android:style/ButtonBar" android:layout_marginTop="10dp">
+		<Button android:id="@+id/button1" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_save" android:onClick="save" />
+		<Button android:id="@+id/button2" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_cancel" android:onClick="cancel" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference android:key="pref_chan_timestamp"
+			android:defaultValue="false" android:title="@string/pref_chan_timestamp" />
+<CheckBoxPreference android:key="pref_chan_message"
+			android:defaultValue="true" android:title="@string/pref_chan_message" />			
+<CheckBoxPreference android:key="pref_chan_join"
+			android:defaultValue="true" android:title="@string/pref_chan_join" />			
+<CheckBoxPreference android:key="pref_chan_part"
+			android:defaultValue="true" android:title="@string/pref_chan_part" />
+<CheckBoxPreference android:key="pref_chan_kick"
+			android:defaultValue="true" android:title="@string/pref_chan_kick" />
+<CheckBoxPreference android:key="pref_chan_quit"
+			android:defaultValue="true" android:title="@string/pref_chan_quit" />
+<CheckBoxPreference android:key="pref_chan_mode"
+			android:defaultValue="true" android:title="@string/pref_chan_mode" />
+<CheckBoxPreference android:key="pref_chan_invite"
+			android:defaultValue="true" android:title="@string/pref_chan_invite" />
+</PreferenceScreen>

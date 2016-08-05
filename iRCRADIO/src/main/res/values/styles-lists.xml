@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="listview_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>        
+        <item name="android:layout_weight">1</item>	
+        <item name="android:dividerHeight">1px</item>										
+    </style>    	
+</resources>

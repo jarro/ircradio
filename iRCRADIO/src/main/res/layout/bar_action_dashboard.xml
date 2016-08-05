@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bar_action_wrapper"
+    android:paddingTop="15dp"
+     >
+
+    <LinearLayout style="@style/bar_action" >
+
+        <LinearLayout
+            style="@style/bar_action_sub"
+            android:gravity="right" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:columnCount="3" >
+
+                <ImageButton
+                    android:id="@+id/buttondisconnect"
+                    style="@style/button_action"
+                    android:onClick="clickDisconnect"
+                    android:src="@drawable/icon_disconnect" />
+
+                <ToggleButton                    
+                    android:id="@+id/buttonmute"
+                    style="@style/button_action"
+                    android:checked="false"
+                    android:drawableRight="@drawable/selector_btn_mute"
+                    android:onClick="clickMute"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton                    
+                    android:id="@+id/buttontoast"
+                    style="@style/button_action"
+                    android:checked="false"
+                    android:drawableRight="@drawable/selector_btn_toast"
+                    android:onClick="clickToast"
+                    android:textOff=""
+                    android:textOn="" />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

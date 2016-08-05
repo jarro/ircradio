@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/container"
+android:layout_width="fill_parent"
+android:orientation="horizontal"
+android:layout_weight="0"
+android:layout_height="wrap_content" android:paddingTop="4dip" android:gravity="bottom|center_horizontal">
+<Button
+android:id="@+id/buttondisconnect"
+android:text="@string/button_disconnect"
+android:layout_height="fill_parent" android:layout_width="wrap_content" 
+android:background="@drawable/btn_flat_bottom_selector" android:textColor="#ffffff" android:layout_marginBottom="0dp" android:layout_gravity="bottom"/>
+<ToggleButton
+android:id="@+id/buttonmute"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+android:text="@string/button_mute"
+android:textOff="@string/button_mute" android:textOn="@string/button_mute" android:checked="false"
+android:background="@drawable/btn_flat_bottom_selector" android:layout_gravity="bottom" android:textColor="@color/button_flat_toggle">
+</ToggleButton>
+<ToggleButton
+android:id="@+id/buttontoast"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+android:text="@string/button_toast"
+android:textOff="@string/button_toast" android:textOn="@string/button_toast" android:checked="false"
+android:background="@drawable/btn_flat_bottom_selector" android:layout_gravity="bottom" android:textColor="@color/button_flat_toggle">
+</ToggleButton>
+<Button
+android:text="@string/button_chat"
+android:id="@+id/buttonchat"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+android:background="@drawable/btn_flat_bottom_selector" android:textColor="#ffffff" android:layout_marginBottom="0dp" android:layout_gravity="bottom"
+>
+</Button>
+</LinearLayout>

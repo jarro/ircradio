@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="channelmessage">Channel Message</string>
+<string name="newprivatemessage">New Private Message</string>
+<string name="date">Date</string>
+</resources>

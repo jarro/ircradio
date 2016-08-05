@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/iRCRADIO/iRCRADIO.iml" filepath="$PROJECT_DIR$/iRCRADIO/iRCRADIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ircradio.iml" filepath="$PROJECT_DIR$/ircradio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/preffrag/preffrag.iml" filepath="$PROJECT_DIR$/preffrag/preffrag.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+		android:key="pref_globaltoast"
+		android:summary="@string/pref_summary_globaltoast" android:defaultValue="false" android:title="@string/pref_title_globaltoast"/>
+	<CheckBoxPreference
+		android:key="pref_saynick"
+		android:defaultValue="true" android:summary="@string/pref_summary_saynick" android:title="@string/pref_title_saynick"/>
+	<CheckBoxPreference
+		android:key="pref_replacechat"
+		android:defaultValue="true" android:title="@string/pref_title_replacechat" android:summary="@string/pref_summary_replacechat"/>	
+<EditTextPreference android:title="@string/pref_title_defaultnick" android:summary="@string/pref_summary_defaultnick" android:key="pref_nick" android:defaultValue="droid"></EditTextPreference>
+   <PreferenceScreen 
+            android:key="ttsspeak"
+            android:title="@string/pref_ttsspeak_ttsspeakmessagetype"
+            android:summary="@string/pref_ttsspeak_summary_ttsspeakmessagetype">            
+     <CheckBoxPreference
+		android:key="pref_ttsspeak_action"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_action"/>
+	 <CheckBoxPreference
+		android:key="pref_ttsspeak_invite"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_invite"/>
+	 <CheckBoxPreference
+		android:key="pref_ttsspeak_join"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_join"/>
+	 <CheckBoxPreference
+		android:key="pref_ttsspeak_kick"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_kick"/>
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_message"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_message"/>
+	 <CheckBoxPreference
+		android:key="pref_ttsspeak_mode"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_mode"/>
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_notice"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_notice"/>		
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_part"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_part"/>
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_privatemessage"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_privatemessage"/>
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_privatenotice"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_privatenotice"/>
+	<CheckBoxPreference
+		android:key="pref_ttsspeak_quit"
+		android:defaultValue="true" android:title="@string/pref_ttsspeak_quit"/>			
+   </PreferenceScreen>
+<EditTextPreference android:summary="@string/pref_summary_ttspitch" android:key="pref_pitch" android:title="@string/pref_title_ttspitch" android:defaultValue="1"></EditTextPreference>
+<EditTextPreference android:key="pref_speed" android:summary="@string/pref_summary_ttsspeed" android:title="@string/pref_title_ttsspeed" android:defaultValue="1"></EditTextPreference>
+</PreferenceScreen>

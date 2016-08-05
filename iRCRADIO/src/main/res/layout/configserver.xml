@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TabWidget>
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+			<LinearLayout android:id="@+id/tab1"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/textview1" android:layout_width="fill_parent"
+				    android:textStyle="bold" android:gravity="center" android:padding="3dip"
+					android:layout_height="wrap_content" android:text="@string/account_serversettings" />
+				<View android:layout_width="fill_parent" android:background="@drawable/gradient_divider" android:layout_height="1dip" 
+				    android:layout_marginBottom="6dip" />
+				<ScrollView android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip">
+						<TableLayout android:id="@+id/body"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:stretchColumns="1">
+							<TableRow>
+								<TextView android:text="@string/ui_account"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/account" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="text"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_server"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/server" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="text"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="@string/ui_password" />
+								<EditText android:id="@+id/serverpass" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="textPassword"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_nick"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/nick" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true"
+									android:phoneNumber="false" android:inputType="text"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="@string/ui_port" />
+
+								<EditText android:id="@+id/port" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true"
+									android:inputType="number"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="@string/ui_auth" />
+								<EditText android:id="@+id/auth" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="text"/>
+							</TableRow>
+							<TableRow android:visibility="gone">
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="@string/ui_autocharset" />
+								<CheckBox android:id="@+id/guesscharset"
+									android:padding="3dip" />
+							</TableRow>							
+							<TableRow>
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="SSL" />
+								<CheckBox android:id="@+id/ssl" android:padding="3dip" />
+							</TableRow>
+						</TableLayout>
+					</RelativeLayout>
+				</ScrollView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/tab2"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/tab2_textview1" android:layout_width="fill_parent"
+				    android:textStyle="bold" android:gravity="center" android:padding="3dip"
+					android:layout_height="wrap_content" android:text="@string/account_identifysettings" />
+				<View android:layout_width="fill_parent" android:background="@drawable/gradient_divider" android:layout_height="1dip" 
+				    android:layout_marginBottom="6dip" />
+				<ScrollView android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip">
+						<TableLayout android:id="@+id/tab_2body"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:stretchColumns="1">
+							<TableRow>
+								<TextView android:text="@string/ui_autoidentify"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<CheckBox android:id="@+id/autoidentify" android:padding="3dip" android:checked="false"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_nickserv"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/nickserv" android:text="NickServ"
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="text"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_nickpass"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/nickpass" android:text=""
+									android:padding="3dip" android:scrollHorizontally="true" android:inputType="textPassword"/>
+							</TableRow>
+						</TableLayout>
+					</RelativeLayout>	
+				</ScrollView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/tab3"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/tab3_textview1" android:layout_width="fill_parent"
+				    android:textStyle="bold" android:gravity="center" android:padding="3dip"
+					android:layout_height="wrap_content" android:text="@string/account_performsettings" />
+				<View android:layout_width="fill_parent" android:background="@drawable/gradient_divider" android:layout_height="1dip" 
+				    android:layout_marginBottom="6dip" />
+				<ScrollView android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:fillViewport="true">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip" android:orientation="vertical">
+                        <EditText android:id="@+id/perform" android:text="" 
+                        	android:padding="3dip" android:scrollHorizontally="true"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="top" android:inputType="textMultiLine" android:layout_weight="1"/>
+					</LinearLayout>					
+				</ScrollView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/tab4"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/tab4_textview1" android:layout_width="fill_parent"
+				    android:textStyle="bold" android:gravity="center" android:padding="3dip"
+					android:layout_height="wrap_content" android:text="@string/account_encodesettings" />
+				<View android:layout_width="fill_parent" android:background="@drawable/gradient_divider" android:layout_height="1dip" 
+				    android:layout_marginBottom="6dip" />
+				<ScrollView android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip">
+						<TableLayout android:id="@+id/tab4_body"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:stretchColumns="1">
+							<TableRow>
+								<TextView android:text="@string/ui_encodingoverride"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<CheckBox android:id="@+id/encodingoverride" android:padding="3dip" android:checked="false"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_encodingsend"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />								
+								<Spinner android:id="@+id/encodingsend" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>								
+                            </TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_encodingreceive"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<Spinner android:id="@+id/encodingreceive" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>									
+							</TableRow>
+							<TableRow android:visibility="gone">
+								<TextView android:text="@string/ui_encodingserver"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<Spinner android:id="@+id/encodingserver" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>									
+							</TableRow>
+						</TableLayout>
+					</RelativeLayout>					
+				</ScrollView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/tab5"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/tab5_textview1" android:layout_width="fill_parent"
+				    android:textStyle="bold" android:gravity="center" android:padding="3dip"
+					android:layout_height="wrap_content" android:text="@string/account_reconnectsettings" />
+				<View android:layout_width="fill_parent" android:background="@drawable/gradient_divider" android:layout_height="1dip" 
+				    android:layout_marginBottom="6dip" />
+				<ScrollView android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip">
+						<TableLayout android:id="@+id/tab5_body"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:stretchColumns="1">
+							<TableRow>
+								<TextView android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" android:text="@string/ui_reconnect" />
+								<CheckBox android:id="@+id/reconnect" android:padding="3dip" />
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_reconnectinterval"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/reconnectinterval" android:text="30"
+									android:padding="3dip" android:inputType="number"/>
+							</TableRow>
+							<TableRow>
+								<TextView android:text="@string/ui_reconnectretries"
+									android:textStyle="bold" android:gravity="right"
+									android:padding="3dip" />
+								<EditText android:id="@+id/reconnectretries" android:text="12"
+									android:padding="3dip" android:inputType="number" />
+							</TableRow>
+						</TableLayout>
+					</RelativeLayout>					
+				</ScrollView>
+			</LinearLayout>
+		</FrameLayout>
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_weight="0"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		style="@android:style/ButtonBar" android:layout_marginTop="10dp">
+		<Button android:id="@+id/button1" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_save" android:onClick="save" />
+		<Button android:id="@+id/button2" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_cancel" android:onClick="cancel" />
+		</LinearLayout>
+						
+	</LinearLayout>
+</TabHost>

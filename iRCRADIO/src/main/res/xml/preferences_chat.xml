@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference android:key="pref_chan_showchannav"
+		android:defaultValue="true" 
+		android:title="@string/pref_title_chan_showchannav" />
+	<CheckBoxPreference android:key="pref_chan_showactnav"
+		android:defaultValue="false" 
+		android:title="@string/pref_title_chan_showactnav" />	
+
+</PreferenceScreen>

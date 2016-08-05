@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menupreferences" android:title="@string/menu_preferences" android:menuCategory="system" android:icon="@drawable/ic_menu_preferences" ></item>
+<item android:id="@+id/menuinfo" android:title="@string/menu_info" android:menuCategory="system" android:icon="@drawable/ic_menu_help"></item>
+<item android:id="@+id/menuabout" android:title="@string/menu_about" android:menuCategory="system" android:icon="@drawable/ic_menu_info_details"></item>
+<item android:id="@+id/menuclearlist" android:title="@string/menu_clearlist" android:menuCategory="system" android:icon="@drawable/ic_menu_delete"></item>
+</menu>

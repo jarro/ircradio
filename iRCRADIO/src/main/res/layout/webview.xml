@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/container"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<WebView
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    >
+</WebView>
+<WebView
+    android:id="@+id/prewebview"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:visibility="invisible"
+    >   
+</WebView>
+</RelativeLayout>

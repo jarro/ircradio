@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item type="id" name="ACTION_MORE" />
+
+    <!-- List Manipulation -->
+    <item type="id" name="ACTION_SORTUSERS" />
+    <item type="id" name="ACTION_SORTCHANNELS" />
+    <item type="id" name="ACTION_FILTERLIST" />
+
+    <!-- Chat -->
+    <item type="id" name="ACTION_OPTIONS" />
+    <item type="id" name="ACTION_COMMANDS" />
+    <item type="id" name="ACTION_USERLIST" />
+    <item type="id" name="ACTION_CHANNELTOPIC" />
+
+    <!-- Drawer -->
+    <item type="id" name="ACTION_DISCONNECT" />
+    <item type="id" name="ACTION_TOGGLETOAST" />
+    <item type="id" name="ACTION_TOGGLESOUND" />
+    <item type="id" name="ACTION_MANUAL" />
+    <item type="id" name="ACTION_CLEARLOGS" />
+    <item type="id" name="ACTION_INFO" />
+    <item type="id" name="ACTION_ABOUT" />
+    <item type="id" name="ACTION_PREFERENCES" />
+
+
+    <!-- Generic -->
+    <item type="id" name="ACTION_SAVE" />
+    <item type="id" name="ACTION_DELETE" />
+    <item type="id" name="ACTION_CANCEL" />
+    <item type="id" name="ACTION_UNDO" />
+    <item type="id" name="ACTION_ADD" />
+    <item type="id" name="ACTION_EDIT" />
+    <item type="id" name="ACTION_DONE" />
+    
+
+    <!-- Lists -->
+    <item type="id" name="ACTION_FILTER" />
+    <item type="id" name="ACTION_SORT" />
+    <item type="id" name="ACTION_HISTORY"/>
+    <item type="id" name="ACTION_UP"/>
+    <item type="id" name="ACTION_DOWN"/>
+    
+
+    <!-- Backup Restore -->
+    <item type="id" name="ACTION_BACKUP" />
+    <item type="id" name="ACTION_RESTORE" />
+    
+
+    
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          Copyright (C) 2009 The Android Open Source Project
+
+          Licensed under the Apache License, Version 2.0 (the "License");
+          you may not use this file except in compliance with the License.
+          You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+          Unless required by applicable law or agreed to in writing, software
+          distributed under the License is distributed on an "AS IS" BASIS,
+          WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          See the License for the specific language governing permissions and
+          limitations under the License.
+
+          Editor: 
+            ArtfulBits Inc. (c) 2005-2009 (http://www.artfulbits.com)
+            Android Localizer (aiLocalizer)
+        -->
+<resources>
+  <!--Original value: Ok-->
+  <string name="button_ok">"D'accord"</string>
+  <!--Original value: Yes-->
+  <string name="button_yes">"Oui"</string>
+  <!--Original value: Disconnect-->
+  <string name="button_disconnect">"Déconnecter"</string>
+  <!--Original value: Mute-->
+  <string name="button_mute">"Muet"</string>
+  <!--Original value: Toast-->
+  <string name="button_toast">"Toast"</string>
+  <!--Original value: Clear Logs-->
+  <string name="button_clearlogs">"Effacer"</string>
+  <string name="button_messaging">Messagerie</string>
+  <string name="button_notifications">Notifications</string>
+  <!--Original value: Accounts-->
+  <string name="button_accounts">"Comptes"</string>
+  <string name="button_preferences">Préférences</string>
+  <!--Original value: Save-->
+  <string name="button_save">"Sauver"</string>
+  <!--Original value: Cancel-->
+  <string name="button_cancel">"Annuler"</string>
+  <!--Original value: List Channels-->
+  <string name="button_listchannels">"Liste les chaînes"</string>
+  <!--Original value: List-->
+  <string name="button_list">"Liste"</string>
+  <!--Original value: Sort Channels-->
+  <string name="button_sortchannels">"Trier les chaînes"</string>
+  <!--Original value: Sort Users-->
+  <string name="button_sortusers">"Triez les utilisateurs"</string>
+  <!--Original value: Filter List-->
+  <string name="button_filterlist">"Liste de filtres"</string>
+  <string name="button_chat">Chaîne</string>
+</resources>

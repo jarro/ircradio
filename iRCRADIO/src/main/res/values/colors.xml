@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="drawer_underline_light">#ff565656</color>
+
+    <color name="lgrey">#bebebe</color>
+    <color name="clr_lightred">#380000</color>
+    <color name="ggyellow">#ffff00</color>
+    <color name="ggyellowfaded">#aaffff00</color>
+    <color name="ggred">#ff0000</color>
+    <color name="ggredfaded">#aaff0000</color>
+    <color name="ggoarnge">#ff8b17</color>
+    <color name="ggoarngefaded">#aaff8b17</color>
+    <color name="gggreen">#00cc00</color>
+    <color name="gggreenfaded">#aa00cc00</color>
+    <color name="ggblue">#0066ff</color>
+    <color name="ggbluefaded">#aa0066ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gold">#FDD017</color>
+    <color name="transparent">#00000000</color>
+    <color name="backgrey">#ff333333</color>
+    <color name="nav_grey">#ff404040</color>
+    <color name="nav_white">#ffcccccc</color>
+    <color name="light_grey">#ff8d8c8c</color>
+    <color name="link_blue">#2222cc</color>
+    <color name="sectionheader_back">#33000000</color>
+</resources>

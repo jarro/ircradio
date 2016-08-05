@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="alert_title_confirmclearlogs">Confirm Clear Logs</string>
+<string name="alert_message_confirmclearlogs">Are you sure you want to delete all messages?</string>
+<string name="alert_title_confirmdeletechannel">Confirm Delete</string>
+<string name="alert_message_confirmdeletechannel">Are you sure you want to delete</string>
+<string name="alert_title_confirmdeleteaccount">Confirm Delete</string>
+<string name="alert_message_confirmdeleteaccount">Are you sure you want to delete</string>
+<string name="alert_message_notconnected">Not connected to server.</string>
+<string name="alert_title_selectlanguage">Select Language</string>
+<string name="alert_title_confirmback">Discard Changes</string>
+<string name="alert_message_confirmback">Go back without saving?</string>
+<string name="alert_title_confirmdisconnect">Confirm</string>
+<string name="alert_message_confirmdisconnect">Close all connections?</string>
+</resources>

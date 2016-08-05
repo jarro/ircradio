@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="ui_channel">Channel</string>
+<string name="ui_channelpass">Channel Pass</string>
+<string name="ui_joinleave">Join/Leave</string>
+<string name="ui_language">Language</string>
+<string name="ui_account">Account</string>
+<string name="ui_server">Server</string>
+<string name="ui_password">Password</string>
+<string name="ui_nick">Nick</string>
+<string name="ui_port">Port</string>
+<string name="ui_auth">Auth</string>
+<string name="ui_autocharset">Auto Charset</string>
+<string name="ui_reconnect">Reconnect</string>
+<string name="ui_autoidentify">Auto Identify</string>
+<string name="ui_nickserv">NickServ</string>
+<string name="ui_nickpass">Nick Pass</string>
+<string name="ui_perform">Perform</string>
+<string name="ui_encodingoverride">Override</string>
+<string name="ui_encodingsend">Send</string>
+<string name="ui_encodingreceive">Receive</string>
+<string name="ui_encodingserver">Server</string>
+<string name="ui_reconnectinterval">Interval</string>
+<string name="ui_reconnectretries">Retries</string>
+<string name="ui_addaccount">Add Account</string>
+<string name="ui_addchannel">Add Channel</string>
+<string name="ui_edit">Edit</string>
+<string name="ui_topic">Topic:</string>
+<string name="ui_couldnotretrievetopic">Could not retrieve topic.</string>
+<string name="ui_channels">Channels:</string>
+<string name="ui_private">Private:</string>
+<string name="ui_unread">Unread:</string>
+<string name="ui_minusers">Min users</string>
+<string name="ui_maxusers">Max users</string>
+<string name="ui_contains">Contains</string>
+<string name="ui_filterlist">Filter List</string>
+<string name="ui_messagefrom">Message from</string>
+<string name="ui_loading">Loading...</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<include layout="@layout/bar_action_dashboard" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="horizontal"
+			android:gravity="center_vertical|center_horizontal">
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_vertical">
+
+
+				<FrameLayout style="@style/frame_dash.land">
+					<TextView android:id="@+id/text1" android:text="@string/button_accounts"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text2" android:text="@string/button_accounts"
+						style="@style/text_dash_link.land" android:onClick="clickAccounts" />
+				</FrameLayout>
+
+				<FrameLayout style="@style/frame_dash.land">
+					<TextView android:id="@+id/text3" android:text="@string/button_messaging"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text4" android:text="@string/button_messaging"
+						style="@style/text_dash_link.land" android:onClick="clickChannels" />
+				</FrameLayout>
+
+				<FrameLayout style="@style/frame_dash.land">
+					<TextView android:id="@+id/text5" android:text="@string/button_notifications"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text6" android:text="@string/button_notifications"
+						style="@style/text_dash_link.land" android:onClick="clickNotifications" />
+				</FrameLayout>
+
+			</LinearLayout>
+
+			
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_vertical">
+
+
+				<FrameLayout style="@style/frame_dash.land">
+					<TextView android:id="@+id/text7" android:text="@string/button_listchannels"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text8" android:text="@string/button_listchannels"
+						style="@style/text_dash_link.land" android:onClick="clickListChannels" />
+				</FrameLayout>
+
+				<FrameLayout style="@style/frame_dash.land">
+					<TextView android:id="@+id/text9" android:text="@string/button_chat"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text10" android:text="@string/button_chat"
+						style="@style/text_dash_link.land" android:onClick="clickChat" />						
+				</FrameLayout>
+				
+				<FrameLayout style="@style/frame_dash.land" android:visibility="invisible">
+					<TextView android:id="@+id/text11" android:text="@string/button_chat"
+						style="@style/text_dash_shadow.land" />
+					<TextView android:id="@+id/text12" android:text="@string/button_chat"
+						style="@style/text_dash_link.land" android:onClick="clickChat" />						
+				</FrameLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<include layout="@layout/bar_nav_bottom" />
+	</LinearLayout>
+
+</LinearLayout>

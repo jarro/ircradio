@@ -1,0 +1,134 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   >
+<ScrollView android:layout_marginLeft="2dip" android:layout_marginRight="2dip"  
+   android:layout_weight="2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:layout_marginLeft="2dip" android:layout_marginRight="2dip">
+<TableLayout
+    android:id="@+id/body" 
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"> 
+
+   <TableRow>
+       <TextView
+           android:text="@string/ui_account"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/account"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" />
+   </TableRow>
+
+   <TableRow>
+       <TextView
+           android:text="@string/ui_server"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/server"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" />
+   </TableRow>
+<TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_password"/>
+
+       <EditText android:id="@+id/serverpass"
+           android:text=""
+           android:padding="3dip"
+           android:password="true"
+           android:scrollHorizontally="true" android:phoneNumber="false"/>
+</TableRow> 
+  
+     <TableRow>
+       <TextView
+           android:text="@string/ui_nick"
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/nick"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:phoneNumber="false"/>
+   </TableRow>
+     
+  
+
+<TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_port"/>
+
+       <EditText android:id="@+id/port"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:phoneNumber="false"/>
+</TableRow>
+<TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_auth"/>
+       <EditText android:id="@+id/auth"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:phoneNumber="false"/>
+</TableRow>
+<TableRow android:visibility="gone">
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_autocharset"/>
+       <CheckBox android:id="@+id/guesscharset"
+           android:padding="3dip"
+       />
+</TableRow>
+<TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_reconnect"/>
+       <CheckBox android:id="@+id/reconnect"
+           android:padding="3dip"
+       />
+</TableRow>     
+<TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="SSL"/>
+       <CheckBox android:id="@+id/ssl"
+           android:padding="3dip"
+       />
+</TableRow>
+</TableLayout>
+</RelativeLayout>
+</ScrollView>
+<LinearLayout android:layout_width="fill_parent" android:layout_weight="0"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		style="@android:style/ButtonBar" android:layout_marginTop="10dp">
+		<Button android:id="@+id/button1" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_save" android:onClick="save" />
+		<Button android:id="@+id/button2" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_cancel" android:onClick="cancel" />
+</LinearLayout>
+</LinearLayout>

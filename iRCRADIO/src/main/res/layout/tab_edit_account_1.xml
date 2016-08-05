@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dp">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+        <!-- Row -->
+                    <TextView
+                        style="@style/textmd_label"
+                        android:text="@string/ui_autoidentify"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/autoidentify"
+                        android:checked="false"
+                         />
+
+        <!-- Row -->
+                    <TextView
+                        style="@style/textmd_label"
+                        android:text="@string/ui_nickserv"
+                        />
+
+                    <EditText
+                        android:id="@+id/nickserv"
+                        style="@style/wfill_hwrap"
+                        android:inputType="text"
+                        android:text="NickServ" />
+
+        <!-- Row -->
+                    <TextView
+                        style="@style/textmd_label"
+                        android:text="@string/ui_nickpass"
+                        />
+
+                    <EditText
+                        android:id="@+id/nickpass"
+                        style="@style/wfill_hwrap"
+                        android:inputType="textPassword"
+                        android:text="" />
+
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>

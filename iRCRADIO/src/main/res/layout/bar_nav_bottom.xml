@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/container" android:layout_width="fill_parent"
+	android:orientation="horizontal" android:layout_height="wrap_content" android:background="#ff000000"
+	android:paddingTop="6dip" android:paddingBottom="6dip" android:gravity="center">	
+	<TextView android:id="@+id/nav_button_dashboard" android:text="Retro Radio" style="@style/text_dash_nav" />
+</LinearLayout>

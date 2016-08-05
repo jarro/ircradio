@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="pref_chan_timestamp">Time Stamp</string>
+<string name="pref_chan_join">Join</string>
+<string name="pref_chan_part">Part</string>
+<string name="pref_chan_kick">Kick</string>
+<string name="pref_chan_quit">Quit</string>
+<string name="pref_chan_mode">Mode</string>
+<string name="pref_chan_invite">Invite</string>
+<string name="pref_chan_message">Message</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="label_editpreferences">Preferences</string>
+<string name="label_backup">Backup</string>
+<string name="label_actlistchannels">List Channels</string>
+<string name="label_configserver">Server Configuration</string>
+<string name="label_channeloptions">Channel Options</string>
+<string name="label_accounts">Accounts</string>
+<string name="label_messages">Messages</string>
+<string name="label_notifications">Notifications</string>
+<string name="label_tts">TTS</string>
+</resources>

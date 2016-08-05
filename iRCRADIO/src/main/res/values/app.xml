@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_url">http://cratorsoft.com/ircradio</string>
+<string name="app_eventurl">http://android.earthflare.com/ircevent/events</string>
+<string name="app_clause">Cratorsoft\n2015</string>
+<string name="app_name">IRC Radio</string>
+<string name="drawer_open">Open Drawer</string>
+<string name="drawer_close">Close Drawer</string>
+<string name="app_storagefolder" translatable="false">/apps/ircradio/</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+    android:minWidth="220dp" android:layout_gravity="center_horizontal" >
+<TableLayout
+    android:id="@+id/body" 
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dip" android:layout_marginRight="2dip"
+    android:paddingRight="4dp" android:paddingLeft="4dp"
+    android:stretchColumns="1">
+ <TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_minusers"/>
+
+       <EditText android:padding="3dip"
+           android:scrollHorizontally="true" android:layout_width="wrap_content" android:inputType="number" android:id="@+id/minusers"/>
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:textStyle="bold"
+           android:gravity="right"
+           android:padding="3dip" android:text="@string/ui_maxusers"/>
+
+       <EditText android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:inputType="number" android:id="@+id/maxusers"/>
+</TableRow>  
+     <TableRow>
+       <TextView android:textStyle="bold" android:gravity="right" android:padding="3dip" android:text="@string/ui_contains" /><EditText android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true" android:inputType="textFilter" android:id="@+id/filtertext"/>
+
+       
+   </TableRow>
+</TableLayout>
+<LinearLayout android:layout_width="fill_parent" android:layout_weight="0"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		style="@android:style/ButtonBar" android:layout_marginTop="10dp">
+		<Button android:id="@+id/button1" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_ok" android:onClick="save" />
+		<Button android:id="@+id/button2" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_cancel" android:onClick="cancel" />
+</LinearLayout>
+</LinearLayout>

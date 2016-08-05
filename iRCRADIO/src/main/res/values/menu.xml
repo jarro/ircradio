@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="menu_preferences">Edit Preferences</string>
+<string name="menu_options">Options</string>
+<string name="menu_info">Info</string>
+<string name="menu_about">About</string>
+<string name="menu_userlist">Users</string>
+<string name="menu_topic">Topic</string>
+<string name="menu_addaccount">Add Account</string>
+<string name="menu_backup">Backup</string>
+<string name="menu_disconnect">Disconnect</string>
+<string name="menu_clearlist">Clear List</string>
+<string name="menu_commands">Commands</string>
+</resources>

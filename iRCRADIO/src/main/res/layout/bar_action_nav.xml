@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/bar_action_wrapper">
+	<LinearLayout style="@style/bar_action">
+
+        <ImageButton 
+	     android:id="@+id/buttondash"
+	     style="@style/button_action_home"
+	     android:onClick="clickDashboard"
+	     android:src="@drawable/greylogo"/>
+
+		<LinearLayout style="@style/bar_action_sub"
+			android:gravity="right">
+
+		<include layout="@layout/button_bar_action_disconnect" />
+		<include layout="@layout/button_bar_action_mute" />
+		<include layout="@layout/button_bar_action_toast" />
+		
+		</LinearLayout>
+	</LinearLayout>
+	<View style="@style/bar_action_bevel" />
+</LinearLayout>

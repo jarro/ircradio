@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="button_ok">Ok</string>
+<string name="button_yes">Yes</string>
+<string name="button_disconnect">Disconnect</string>
+<string name="button_mute">Mute</string>
+<string name="button_toast">Toast</string>
+<string name="button_clearlogs">Clear Logs</string>
+<string name="button_messaging">Messaging</string>
+<string name="button_notifications">Notifications</string>
+<string name="button_accounts">Accounts</string>
+<string name="button_preferences">Preferences</string>
+<string name="button_save">Save</string>
+<string name="button_cancel">Cancel</string>
+<string name="button_listchannels">List Channels</string>
+<string name="button_list">List</string>
+<string name="button_sortchannels">Sort Channels</string>
+<string name="button_sortusers">Sort Users</string>
+<string name="button_filterlist">Filter List</string>
+<string name="button_chat">Chat</string>
+</resources>

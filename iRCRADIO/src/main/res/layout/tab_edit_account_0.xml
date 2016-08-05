@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dp">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_account"
+                 />
+
+            <EditText
+                style="@style/wfill_hwrap"
+                android:id="@+id/account"
+                android:inputType="text"
+                android:text="" />
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_server"
+                 />
+
+            <EditText
+                style="@style/wfill_hwrap"
+                android:id="@+id/server"
+                android:inputType="text"
+                android:padding="3dip"
+                android:text="" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_port"
+                />
+
+            <EditText
+                style="@style/wfill_hwrap"
+                android:id="@+id/port"
+                android:inputType="number"
+                android:padding="3dip"
+                android:text="" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_nick"
+                 />
+
+            <EditText
+                style="@style/wfill_hwrap"
+                android:id="@+id/nick"
+                android:inputType="text"
+                android:padding="3dip"
+                android:phoneNumber="false"
+                android:text="" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_password"
+                />
+
+            <EditText
+                style="@style/wfill_hwrap"
+                android:id="@+id/serverpass"
+                android:inputType="textPassword"
+                android:padding="3dip"
+                android:scrollHorizontally="true"
+                android:text="" />
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_language"
+                />
+
+            <Spinner
+                android:id="@+id/language"
+                style="@style/wwrap_hwrap" />
+
+
+
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="SSL"
+                 />
+
+            <CheckBox
+                android:id="@+id/ssl"
+                android:padding="3dip" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

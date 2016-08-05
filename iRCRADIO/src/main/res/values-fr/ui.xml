@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          Copyright (C) 2009 The Android Open Source Project
+
+          Licensed under the Apache License, Version 2.0 (the "License");
+          you may not use this file except in compliance with the License.
+          You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+          Unless required by applicable law or agreed to in writing, software
+          distributed under the License is distributed on an "AS IS" BASIS,
+          WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          See the License for the specific language governing permissions and
+          limitations under the License.
+
+          Editor: 
+            ArtfulBits Inc. (c) 2005-2009 (http://www.artfulbits.com)
+            Android Localizer (aiLocalizer)
+        -->
+<resources>
+  <!--Original value: Channel-->
+  <string name="ui_channel">"Channel"</string>
+  <!--Original value: Channel Pass-->
+  <string name="ui_channelpass">"Channel Pass"</string>
+  <!--Original value: Join/Leave-->
+  <string name="ui_joinleave">"Joindre / quitter"</string>
+  <!--Original value: Language-->
+  <string name="ui_language">"Langue"</string>
+  <!--Original value: Account-->
+  <string name="ui_account">"Compte"</string>
+  <!--Original value: Server-->
+  <string name="ui_server">"Server"</string>
+  <!--Original value: Password-->
+  <string name="ui_password">"Mot de passe"</string>
+  <!--Original value: Nick-->
+  <string name="ui_nick">"Nick"</string>
+  <!--Original value: Port-->
+  <string name="ui_port">"Port"</string>
+  <!--Original value: Auth-->
+  <string name="ui_auth">"Auth"</string>
+  <!--Original value: Auto Charset-->
+  <string name="ui_autocharset">"Auto Charset"</string>
+  <!--Original value: Reconnect-->
+  <string name="ui_reconnect">"Rebranchez"</string>
+  <string name="ui_autoidentify">Auto Identifier</string>
+  <string name="ui_nickserv">NickServ</string>
+  <string name="ui_nickpass">Nick Pass</string>
+  <string name="ui_perform">Perform</string>
+  <string name="ui_encodingoverride">Activer</string>
+  <string name="ui_encodingsend">Envoyer</string>
+  <string name="ui_encodingreceive">Recevoir</string>
+  <string name="ui_encodingserver">Serveur</string>
+  <string name="ui_reconnectinterval">Intervalle</string>
+  <string name="ui_reconnectretries">Tentatives</string>
+  <!--Original value: Add Account-->
+  <string name="ui_addaccount">"Ajouter un compte"</string>
+  <!--Original value: Add Channel-->
+  <string name="ui_addchannel">"Add Channel"</string>
+  <!--Original value: Edit-->
+  <string name="ui_edit">"Modifier"</string>
+  <!--Original value: Topic:-->
+  <string name="ui_topic">"Sujet:"</string>
+  <!--Original value: Could not retrieve topic.-->
+  <string name="ui_couldnotretrievetopic">"Impossible de récupérer le sujet."</string>
+  <!--Original value: Channels:-->
+  <string name="ui_channels">"Chaînes:"</string>
+  <!--Original value: Private:-->
+  <string name="ui_private">"Privé:"</string>
+  <!--Original value: Unread:-->
+  <string name="ui_unread">"Non lus:"</string>
+  <!--Original value: Min users-->
+  <string name="ui_minusers">"Min utilisateurs"</string>
+  <!--Original value: Max users-->
+  <string name="ui_maxusers">"Max utilisateurs"</string>
+  <!--Original value: Contains-->
+  <string name="ui_contains">"Contient"</string>
+  <!--Original value: Filter List-->
+  <string name="ui_filterlist">"Liste de filtres"</string>
+  <string name="ui_messagefrom">"Message de"</string>
+  <string name="ui_loading">Chargement...</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="backup_text">Backup file is saved and restored via the sdcard.</string>
+<string name="backup_backup">Backup</string>
+<string name="backup_restore">Restore</string>
+<string name="backup_Complete">Backup completed.</string>
+<string name="backup_CompleteRestore">Restore completed.</string>
+<string name="alert_filenotfound">File not found!</string>
+<string name="alert_backupnotfound">Could not find backup file on the sdcard.</string>
+<string name="backup_confirmimport">Confirm Import</string>
+<string name="backup_confirmimportmessage">Are you sure you want to continue?  Existing data will be lost.</string>
+<string name="backup_errorbackup">Backup failed.</string>
+<string name="backup_errorrestore">Restore failed.</string>
+
+</resources>

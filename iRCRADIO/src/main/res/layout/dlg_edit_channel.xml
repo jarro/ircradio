@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="6dp">
+
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_channel" />
+
+            <EditText
+                android:id="@+id/channel"
+                style="@style/wfill_hwrap"
+                android:inputType="text" />
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_channelpass" />
+
+            <EditText
+                android:id="@+id/channelpass"
+                style="@style/wfill_hwrap"
+                android:inputType="textPassword"
+                android:text="" />
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_joinleave" />
+
+            <CheckBox android:id="@+id/joinleave" />
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="Auto-join" />
+
+            <CheckBox android:id="@+id/autojoin" />
+
+
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="@string/ui_language" />
+
+            <Spinner
+                android:id="@+id/language"
+                 />
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

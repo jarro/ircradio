@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/widget32"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minHeight="150dp" android:minWidth="170dp"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	 android:orientation="vertical">
+	<TextView android:layout_width="wrap_content" android:id="@+id/TextView01"
+		android:layout_height="wrap_content" android:text="TextView01"
+		android:autoLink="all" android:layout_weight="1" android:paddingBottom="10dp" android:paddingLeft="10dp"
+	android:paddingRight="10dp">
+	</TextView>
+	<LinearLayout android:layout_width="fill_parent" android:layout_weight="0"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		style="@android:style/ButtonBar" android:layout_marginTop="10dp">		
+		<Button android:id="@+id/buttonok" android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/button_ok" android:onClick="cancel" />
+    </LinearLayout>	
+</LinearLayout>

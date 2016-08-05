@@ -1,0 +1,41 @@
+create table account (_id integer primary key autoincrement, 
+                      server text default "" not null,
+                      serverpass text default "" not null,
+                      port text default "" not null,
+                      joinleave text default "false" not null,
+                      nick text default "" not null,
+                      auth text default "" not null,
+                      accountname text default "" not null,
+                      channel text default "" not null,
+                      channelpass text default "" not null,
+                      guesscharset text default "false" not null,
+                      reconnect text default "true" not null,
+                      ssl text default "false" not null,
+                      autoidentify text default "false" not null,
+                      nickserv text default "NickServ" not null,
+                      nickpass text default "" not null,
+                      perform text default "" not null,
+                      encodingoverride text default "false" not null,
+                      encodingsend text default "UTF-8" not null,
+                      encodingreceive text default "UTF-8" not null,
+                      encodingserver text default "UTF-8" not null,
+                      reconnectinterval text default "30" not null,
+                      reconnectretries text default "12" not null,
+                      language text default "en" not null
+                    );
+
+create table channel (_id integer primary key autoincrement, 
+                      accountid integer not null,
+                      channel text default "" not null,
+                      channelpass text default "" not null,
+                      joinleave text default "false" not null,
+                      autojoin text default "false" not null,
+                      language text default "en" not null                      
+                    );                         
+
+insert into account (server, accountname) values ("irc.quakenet.org", "Quakenet");
+insert into account (server, accountname) values ("irc.freenode.net", "Freenode");
+insert into account (server, accountname) values ("irc.undernet.org", "Undernet");
+insert into account (server, accountname) values ("irc.efnet.org", "Efnet");
+insert into account (server, accountname) values ("irc.dal.net", "Dalnet");
+insert into channel (accountid, channel) values (1,"#csoft");

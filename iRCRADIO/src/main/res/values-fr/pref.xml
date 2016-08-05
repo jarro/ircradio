@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          Copyright (C) 2009 The Android Open Source Project
+
+          Licensed under the Apache License, Version 2.0 (the "License");
+          you may not use this file except in compliance with the License.
+          You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+          Unless required by applicable law or agreed to in writing, software
+          distributed under the License is distributed on an "AS IS" BASIS,
+          WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          See the License for the specific language governing permissions and
+          limitations under the License.
+
+          Editor: 
+            ArtfulBits Inc. (c) 2005-2009 (http://www.artfulbits.com)
+            Android Localizer (aiLocalizer)
+        -->
+<resources>
+<string name="prefscreen_title_ttspreferences">TTS Préférences</string>
+<string name="prefscreen_title_ttslanguages">TTS Idiomas</string>
+<string name="prefscreen_title_serverdefaults">Défaut Du Serveur</string>
+<string name="prefscreen_title_notifications">Notifications</string>
+<string name="prefscreen_title_toasts">Toasts</string>
+<string name="prefscreen_title_streamvolume">Musique/TTS volume</string>
+    <string name="prefscreen_title_chatdefaults">défaut discussion</string>
+  <!--Original value: Global Toast-->
+  <string name="pref_title_globaltoast">"Global Toast"</string>
+  <!--Original value: Show toasts globally-->
+  <string name="pref_summary_globaltoast">"Afficher les toasts au niveau mondial"</string>
+  <!--Original value: Message author-->
+  <string name="pref_title_saynick">"Message de l'auteur"</string>
+  <!--Original value: Include message author in speech-->
+  <string name="pref_summary_saynick">"Inclure dans le discours de l'auteur du message"</string>
+  <!--Original value: :) = smiles-->
+  <string name="pref_title_replacechat">":) = Sourire"</string>
+  <!--Original value: Expand common chat acronymns-->
+  <string name="pref_summary_replacechat">"Commun chat Acronymns Expand"</string>
+  <string name="pref_title_mutemusic">Muet musique</string>
+  <string name="pref_summary_mutemusic">TTS Volume lorsque muet est activé</string>
+  <string name="pref_title_splitstream">Seperate volume</string>
+<string name="pref_summary_splitstream">Permet un contrôle de volume indépendant du TTS et la musique</string>
+  <string name="pref_title_call_volume">TTS Volume</string>
+  <string name="pref_summary_call_volume">Réglez le volume de 0 à 5</string>
+  <!--Original value: Default nick-->
+  <string name="pref_title_defaultnick">"Nick par défaut"</string>
+  <!--Original value: Nick used to join channels-->
+  <string name="pref_summary_defaultnick">"Nick utilisés pour rejoindre les canaux"</string>
+  <!--Original value: TTS voice speed-->
+  <string name="pref_title_ttsspeed">"TTS voix vitesse"</string>
+  <!--Original value: 1 is default speed,  0.5  is half default,  2  is double default etc.-->
+  <string name="pref_summary_ttsspeed">"1 est la vitesse par défaut, 0.5 est la moitié par défaut, 2 est le double défaut etc"</string>
+  <!--Original value: TTS voice pitch-->
+  <string name="pref_title_ttspitch">"TTS voix pitch"</string>
+  <!--Original value: 1 is default,  0.5  is half default,  2  is double default etc.-->
+  <string name="pref_title_chan_showchannav">Vair la barre de navigation Chaîne</string>
+  <string name="pref_title_chan_showactnav">Voir la barre de navigation</string>
+  <string name="pref_title_headphonemute">Uniquement le casque</string>
+  <string name="pref_summary_headphonemute">"Toujours en sourdine lorsque le casque n'est pas connecté"</string>
+  <string name="pref_summary_ttspitch">"1 est par défaut, 0.5 est la moitié par défaut, 2 est le double défaut etc"</string>
+  <string name="pref_ttsspeak_ttsspeakmessagetype">Parler des types de message</string>
+  <string name="pref_ttsspeak_summary_ttsspeakmessagetype">Toggle types de messages de parler.</string>
+    <string name="pref_ttsspeak_action">TTS actions</string>
+    <string name="pref_ttsspeak_invite">TTS invite</string>
+    <string name="pref_ttsspeak_join">TTS jointures</string>
+    <string name="pref_ttsspeak_kick">TTS coups de pied</string>
+    <string name="pref_ttsspeak_message">TTS messages</string>
+    <string name="pref_ttsspeak_mode">TTS modes</string>
+    <string name="pref_ttsspeak_notice">TTS avis</string>
+    <string name="pref_ttsspeak_part">TTS laisser</string>
+    <string name="pref_ttsspeak_privatemessage">TTS messages privés</string>
+    <string name="pref_ttsspeak_privatenotice">TTS Avis privés</string>
+    <string name="pref_ttsspeak_quit">TTS quitte</string>
+  <string name="pref_group_notifications_newprivate">"Nouveau message privé"</string>
+  <string name="pref_group_notifications_nickdetected">"Nick détecté"</string>
+</resources>

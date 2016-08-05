@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:menuCategory="system" android:id="@+id/menuoptions" android:icon="@drawable/ic_menu_preferences" android:title="@string/menu_options"></item>
+<item android:menuCategory="system" android:id="@+id/menucommands" android:icon="@drawable/ic_menu_more" android:title="@string/menu_commands"></item>
+</menu>

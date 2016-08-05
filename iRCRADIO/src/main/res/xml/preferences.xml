@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen android:key="pc_serverdefaults" android:title="@string/prefscreen_title_serverdefaults"/>
+<PreferenceScreen android:key="pc_chatpreferences" android:title="@string/prefscreen_title_chatdefaults"/>
+<PreferenceScreen android:key="pc_ttspreferences" android:title="@string/prefscreen_title_ttspreferences"/>
+<PreferenceScreen android:key="pc_ttslanguages" android:title="@string/prefscreen_title_ttslanguages"/>
+<PreferenceScreen android:key="pc_notifications" android:title="@string/prefscreen_title_notifications"/>
+<PreferenceScreen android:key="pc_toasts" android:title="@string/prefscreen_title_toasts"/>
+<PreferenceScreen android:key="pc_backuprestore" android:title="@string/backup_backup"/>
+
+    <!--
+    <PreferenceScreen android:key="pc_toasts" android:title="@string/prefscreen_title_toasts">
+        <CheckBoxPreference android:key="pref_globaltoast"
+            android:summary="@string/pref_summary_globaltoast"
+            android:defaultValue="false" android:title="@string/pref_title_globaltoast" />
+    </PreferenceScreen>
+    -->
+     <!--
+    <PreferenceScreen android:key="pc_mutemusic" android:title="@string/prefscreen_title_streamvolume">
+            <CheckBoxPreference android:key="pref_splitstream"
+                android:defaultValue="false" android:title="@string/pref_title_splitstream"
+                android:summary="@string/pref_summary_splitstream" />
+            <CheckBoxPreference android:key="pref_mutemusic"
+                android:defaultValue="false" android:title="@string/pref_title_mutemusic"
+                android:summary="@string/pref_summary_mutemusic" />
+            <EditTextPreference android:key="pref_call_volume"
+            android:summary="@string/pref_summary_call_volume" android:title="@string/pref_title_call_volume"
+            android:defaultValue="3" android:inputType="number"></EditTextPreference>
+    </PreferenceScreen>
+    -->
+</PreferenceScreen>

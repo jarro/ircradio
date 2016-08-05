@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="account_serversettings">Server</string>
+<string name="account_identifysettings">Identify</string>
+<string name="account_performsettings">Perform</string>
+<string name="account_encodesettings">Encode</string>
+<string name="account_reconnectsettings">Reconnect</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          Copyright (C) 2009 The Android Open Source Project
+
+          Licensed under the Apache License, Version 2.0 (the "License");
+          you may not use this file except in compliance with the License.
+          You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+          Unless required by applicable law or agreed to in writing, software
+          distributed under the License is distributed on an "AS IS" BASIS,
+          WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          See the License for the specific language governing permissions and
+          limitations under the License.
+
+          Editor: 
+            ArtfulBits Inc. (c) 2005-2009 (http://www.artfulbits.com)
+            Android Localizer (aiLocalizer)
+        -->
+<resources>
+<string name="alert_title_confirmclearlogs">Suppression Du Message Confirmer</string>
+<string name="alert_message_confirmclearlogs">Etes-vous sûr de vouloir supprimer tous les messages?</string>
+  <!--Original value: Confirm Delete-->
+  <string name="alert_title_confirmdeletechannel">"Confirmer la suppression"</string>
+  <!--Original value: Are you sure you want to delete-->
+  <string name="alert_message_confirmdeletechannel">"Etes-vous sûr de vouloir supprimer"</string>
+  <!--Original value: Confirm Delete-->
+  <string name="alert_title_confirmdeleteaccount">"Confirmer la suppression"</string>
+  <!--Original value: Are you sure you want to delete-->
+  <string name="alert_message_confirmdeleteaccount">"Etes-vous sûr de vouloir supprimer"</string>
+  <!--Original value: Not connected to server.-->
+  <string name="alert_message_notconnected">"Pas de connexion au serveur."</string>
+  <string name="alert_title_selectlanguage">Choisissez la langue</string>
+  <string name="alert_title_confirmback">Annuler les Modifications</string>
+  <string name="alert_message_confirmback">Retour sans enregistrer?</string>
+  <string name="alert_title_confirmdisconnect">Confirmer</string>
+  <string name="alert_message_confirmdisconnect">Fermer toutes les connexions?</string>
+</resources>

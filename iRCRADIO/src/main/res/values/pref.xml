@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="prefscreen_title_ttspreferences">TTS Preferences</string>
+<string name="prefscreen_title_ttslanguages">TTS Languages</string>
+<string name="prefscreen_title_serverdefaults">Server Defaults</string>
+<string name="prefscreen_title_notifications">Notifications</string>
+<string name="prefscreen_title_toasts">Toasts</string>
+<string name="prefscreen_title_streamvolume">Music/TTS volume</string>
+<string name="prefscreen_title_chatdefaults">Chat Defaults</string>
+<string name="pref_title_globaltoast">Global Toast</string>
+<string name="pref_summary_globaltoast">Show toasts globally</string>
+<string name="pref_title_saynick">Message author</string>
+<string name="pref_summary_saynick">Include message author in speech</string>
+<string name="pref_title_replacechat">:) = smiles</string>
+<string name="pref_summary_replacechat">Expand common chat acronyms</string>
+<string name="pref_title_mutemusic">Mute music</string>
+<string name="pref_summary_mutemusic">Music stream muted during speech.</string>
+<string name="pref_title_splitstream">Seperate streams</string>
+<string name="pref_summary_splitstream">Allows independent volume control of TTS and Music</string>
+<string name="pref_title_call_volume">TTS Volume when streams seperate</string>
+<string name="pref_summary_call_volume">Set volume from 0 to 5</string>
+<string name="pref_title_defaultnick">Default nick</string>
+<string name="pref_summary_defaultnick">Nick used to join channels</string>
+<string name="pref_title_ttsspeed">TTS voice speed</string>
+<string name="pref_summary_ttsspeed">1 is default speed,  0.5  is half default,  2  is double default etc.</string>
+<string name="pref_title_ttspitch">TTS voice pitch</string>
+<string name="pref_summary_ttspitch">1 is default,  0.5  is half default,  2  is double default etc.</string>
+<string name="pref_ttsspeak_ttsspeakmessagetype">Speak message types</string>
+<string name="pref_ttsspeak_summary_ttsspeakmessagetype">Toggle message types to speak.</string>
+<string name="pref_ttsspeak_action">TTS actions</string>
+<string name="pref_ttsspeak_invite">TTS invites</string>
+<string name="pref_ttsspeak_join">TTS joins</string>
+<string name="pref_ttsspeak_kick">TTS kicks</string>
+<string name="pref_ttsspeak_message">TTS messages</string>
+<string name="pref_ttsspeak_mode">TTS modes</string>
+<string name="pref_ttsspeak_notice">TTS notices</string>
+<string name="pref_ttsspeak_part">TTS parts</string>
+<string name="pref_ttsspeak_privatemessage">TTS private messages</string>
+<string name="pref_ttsspeak_privatenotice">TTS private notices</string>
+<string name="pref_ttsspeak_quit">TTS quits</string>
+<string name="pref_title_chan_showchannav">Show Channel Bar</string>
+<string name="pref_title_chan_showactnav">Show Nav Bar</string>
+<string name="pref_title_headphonemute">Headphones Only</string>
+<string name="pref_summary_headphonemute">Always muted when headphones not connected</string>
+<string name="pref_group_notifications_newprivate">New private message</string>
+<string name="pref_group_notifications_nickdetected">Nick detected</string>
+
+</resources>

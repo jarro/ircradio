@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menusortusers" android:title="@string/button_sortusers" android:menuCategory="system"  android:icon="@drawable/ic_menu_sort_by_size" ></item>
+<item android:id="@+id/menusortchannels" android:title="@string/button_sortchannels" android:menuCategory="system"  android:icon="@drawable/ic_menu_sort_alphabetically" ></item>
+<item android:id="@+id/menufilterlist" android:title="@string/button_filterlist" android:menuCategory="system"  android:icon="@drawable/ic_menu_search" ></item>
+</menu>
