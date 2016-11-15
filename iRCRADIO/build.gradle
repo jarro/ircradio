@@ -18,8 +18,8 @@ android {
         applicationId "com.earthflare.android.ircradio"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 62
-        versionName "3.1.2"
+        versionCode 63
+        versionName "3.1.3"
     }
 
     buildTypes {

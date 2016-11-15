@@ -249,7 +249,7 @@ public class FragEditAccount extends FragConfirmBackPressed {
         mAccountData.nick = etnick.getText().toString();
         mAccountData.port = etport.getText().toString();
         mAccountData.ssl = String.valueOf(cbssl.isChecked());
-        //mAccountData.guesscharset = String.valueOf(cbguesscharset.getText().toString());
+        mAccountData.guesscharset = String.valueOf(false);
 
         try {
             mAccountData.language = ((TTSLanguage) spinnerLanguage.getSelectedItem()).getLanguageForDB();
