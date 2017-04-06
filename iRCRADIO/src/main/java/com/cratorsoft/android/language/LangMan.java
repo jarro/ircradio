@@ -5,7 +5,10 @@ import com.earthflare.android.ircradio.Globo;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Locale;
@@ -153,6 +156,25 @@ public enum LangMan {
     }
 
 
+    private InputStream getAssetInputStream(String assetfile) throws IOException {
+
+        //load file from external storage
+        //use internal asset on fail
+
+
+        File rootpath = Globo.ctx.getExternalFilesDir(null);
+        File externalLangFile = new File(rootpath.getAbsolutePath().toString() + "/lookup/" + assetfile + ".jsn");
+
+        if (externalLangFile.exists()){
+            return  new FileInputStream(externalLangFile);
+        }else{
+            return Globo.ctx.getAssets().open("lookup/" + assetfile + ".jsn");
+        }
+
+
+    }
+
+
     private boolean loadAsset(String assetfile){
 
 
@@ -161,7 +183,7 @@ public enum LangMan {
         boolean success = false;
         try {
             reader = new BufferedReader(
-                    new InputStreamReader(Globo.ctx.getAssets().open("lookup/" + assetfile + ".jsn"), "UTF-8"));
+                    new InputStreamReader(getAssetInputStream(assetfile), "UTF-8"));
             // do reading, usually loop until end of file reading
             String mLine;
             while ( (mLine = reader.readLine()) != null) {
@@ -249,8 +271,9 @@ public enum LangMan {
             String out = "";
             String token;
 
-            boolean replaced = false;
+            boolean replaced;
             while (Tok.hasMoreElements()) {
+                replaced = false;
                 token = (String) Tok.nextElement();
 
                 if (lt.replaceMap.containsKey(token)) {

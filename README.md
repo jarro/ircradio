@@ -10,7 +10,7 @@ Updated some dependencies and got it building with current versions of Android S
 ## Planned Stability Enhancements
 
 * Switch to EventBus for background ui updates.
-* Move the chatlogs from using listview to viewholer
+* Move the chatlogs from using listview to viewholder
 
 
 ## TTS INFO
@@ -42,6 +42,13 @@ ircMap = Translations used in TTS and chat logs.  When unavailable Logs use Engl
 startswithMap = Matches beginning of words for example "www" will replace  "www.reallylonglink.com/df?id=33"  with "web link".
 
 replaceMap = Used to improve experience by substituting acronyms that don't work well in TTS.
+
+
+#### Using Custom Language File
+All language files are copied to public storage on app start if the file does not already exist.
+If a language file has been loaded into memory the app will need to be restarted for edits to take affect.
+The files are stored in the apps public files folder.
+Android/data/com.earthflare.android.ircradio/files/lookup
 
 
 

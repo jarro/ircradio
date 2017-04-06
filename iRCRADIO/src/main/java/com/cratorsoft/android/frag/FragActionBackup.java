@@ -1,6 +1,8 @@
 package com.cratorsoft.android.frag;
 
+import android.Manifest;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.LayoutInflater;
@@ -70,15 +72,25 @@ public class FragActionBackup extends BusyTaskFragment implements ConfirmListene
     public void onStart() {
         super.onStart();
         // views bound
+
+        //test for files permissions
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
     }
 
     @Override
     public void onResume() {
-        // setTitle();
+
+
         if (mInitialized) {
             loadRefreshDataTask();
         }
         super.onResume();
+
+
+
+
     }
 
     @Override
@@ -115,6 +127,8 @@ public class FragActionBackup extends BusyTaskFragment implements ConfirmListene
     // ======================== Fragment Functions =====
 
     public void restorePrompt() {
+
+
 
         if (!externalWriteable()) {
             return;
@@ -296,6 +310,7 @@ public class FragActionBackup extends BusyTaskFragment implements ConfirmListene
     }
 
     public void backupTask() {
+
 
         if (!externalWriteable()) {
             return;
