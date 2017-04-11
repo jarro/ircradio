@@ -1,0 +1,55 @@
+{
+  "code": "en",
+  "replaceAllByRegex":[
+		{"regex":"aa",
+		    "text":"bb"},
+		{"regex":"cc",
+        		"text":"dd"}
+		],
+  "blockMessageByRegex":["rocket","rocket2"],
+  "blockMessageByStartsWith":["test","test2"],
+  "blockMessageByUser":["spammybot","spammybot2"],
+  "ircMap": {
+    "hasjoinedthechannel": "broke into the channel",
+    "says": "lets it be known",
+    "youwerekickedby": "das booted",
+    "from": "ZZZZ",
+    "for": "ZZZZ",
+    "waskickedby": "ZZZZ",
+    "hasleftthechannel": "ZZZZ",
+    "hasquit": "ZZZZ",
+    "notice": "ZZZZ",
+    "partmessage" : "ZZZZ",
+    "youhavejoined" : "ZZZZ",
+    "as" : "ZZZZ",
+    "nowtalkingin" : "ZZZZ",
+    "kickedby" : "ZZZZ",
+    "kicks" : "ZZZZ",
+    "newnoticefrom" : "ZZZZ",
+    "newprivatemessagefrom" : "ZZZZ",
+    "setsmode" : "ZZZZ",
+    "invitedyouto" : "ZZZZ",
+    "invited" : "ZZZZ",
+    "tojoinchannel" : "ZZZZ"
+
+  },
+  "startswithMap": {
+    "http": "web link",
+    "www.": "web link"
+  },
+  "replaceMap": {
+    "..":",",
+    "...":",",
+
+    ":)": "ZZZZ",
+    ":-)": "ZZZZ",
+    ":>": "ZZZZ",
+    ":-p": "ZZZZ",
+    ":p": "ZZZZ",
+    ":P": "ZZZZ",
+    ";)": "ZZZZ",
+    ";-)": "ZZZZ",
+    ":(": "ZZZZ"
+
+  }
+}

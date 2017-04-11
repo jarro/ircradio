@@ -32,6 +32,7 @@ Language resource file similar to template.jsn required for full support.
 #### Specs
 Language tables are in json format.
 (https://github.com/jarro/ircradio/tree/master/iRCRADIO/src/main/assets/lookup)
+check examples.jsn for formatting
 
 code = language code  any xx, xx_XX, xx_XX_XXX  format is valid and will be paired with matching TTS Resource.
 
@@ -41,7 +42,25 @@ ircMap = Translations used in TTS and chat logs.  When unavailable Logs use Engl
 
 startswithMap = Matches beginning of words for example "www" will replace  "www.reallylonglink.com/df?id=33"  with "web link".
 
+
 replaceMap = Used to improve experience by substituting acronyms that don't work well in TTS.
+
+
+blockMessageByStartsWith = Will drop message from TTS if it starts with provided text.
+
+
+blockMessageByUser = Block all messages from a user or bot.
+
+
+blockMessageByRegex = regex is passed to String.match  If it evaluates to true message is not sent to TTS
+
+
+replaceAllByRegex = requires regex and the text to sub in.   uses  the  String.replaceAll function
+
+
+
+replaceAllByRegex = calls java's  String.replaceAll  takes regex and a string.
+
 
 
 #### Using Custom Language File
@@ -50,6 +69,9 @@ If a language file has been loaded into memory the app will need to be restarted
 The files are stored in the apps public files folder.
 Android/data/com.earthflare.android.ircradio/files/lookup
 
+Delete a file to have it replaced.
+Normally Restarting app will refresh customizations.
+Sometimes a reboot of the device is neccessary for file changes to be available.
 
 
 

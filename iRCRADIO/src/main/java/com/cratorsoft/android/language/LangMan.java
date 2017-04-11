@@ -266,6 +266,30 @@ public enum LangMan {
             return message;
         }else {
 
+            //apply block by startswith
+            for (String startsWith :  lt.blockMessageByStartsWith){
+                if (message.startsWith(startsWith)){
+                    return "";
+                }
+            }
+
+            //apply block by regex
+            try {
+                for (String regex : lt.blockMessageByRegex) {
+                    if (message.matches(regex)) {
+                        return "";
+                    }
+                }
+            }catch(Exception e){}
+
+            //apply replace all
+            try {
+                for (LangTable.RegexCommand regexCommand : lt.replaceAllByRegex) {
+                   message = message.replaceAll(regexCommand.regex, regexCommand.text);
+                }
+            }catch(Exception e){}
+
+
             StringTokenizer Tok = new StringTokenizer(message);
 
             String out = "";

@@ -16,7 +16,7 @@ version = VERSION
 group = GROUP
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.+'
+    compile 'com.android.support:support-v4:25.3.1'
 }
 
 android {
@@ -24,7 +24,7 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 16
         targetSdkVersion 25
     }
 
