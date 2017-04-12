@@ -23,6 +23,7 @@ import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.cratorsoft.android.aamain.ActMain_;
+import com.cratorsoft.android.receiver.RemoteReceiver;
 import com.cratorsoft.android.ttslanguage.TTSPipeline;
 import com.earthflare.android.logmanager.LogManager;
 
@@ -232,14 +233,46 @@ public class IrcRadioService extends android.app.Service {
             statusicon = R.drawable.ic_stat_gg_white_notification;
         }
 
-        Notification status = new NotificationCompat.Builder(this)
+
+        NotificationCompat.Builder nbuilder = new NotificationCompat.Builder(this)
                 .setContentTitle(title)
                 .setContentText(message)
-                .setSmallIcon(statusicon)
-                .build();
+                .setSmallIcon(statusicon);
+
+
+        //purge intent
+        Intent purgeIntent = new Intent(this, RemoteReceiver.class);
+        purgeIntent.setAction(RemoteReceiver.ACTION_PURGE_MESSAGES);
+        PendingIntent pendingPurgeIntent = PendingIntent.getBroadcast(this, 0, purgeIntent,
+                PendingIntent.FLAG_CANCEL_CURRENT);
+        nbuilder.addAction(R.drawable.icn_nuke, "Purge", pendingPurgeIntent);
+
+
+        //toggle tts
+        Intent ttsIntent = new Intent(this, RemoteReceiver.class);
+        ttsIntent.setAction(RemoteReceiver.ACTION_TOGGLE_TTS);
+        PendingIntent pendingTTSIntent = PendingIntent.getBroadcast(this, 0, ttsIntent,
+                PendingIntent.FLAG_CANCEL_CURRENT);
+        if(Globo.mutestate){
+            nbuilder.addAction(R.drawable.icn_volume_off, "Unmute", pendingTTSIntent);
+        }else{
+            nbuilder.addAction(R.drawable.icn_volume_high, "Mute", pendingTTSIntent);
+        }
+
+        //toggle toast
+        Intent toastIntent = new Intent(this, RemoteReceiver.class);
+        toastIntent.setAction(RemoteReceiver.ACTION_TOGGLE_TOAST);
+        PendingIntent pendingToastIntent = PendingIntent.getBroadcast(this, 0, toastIntent,
+                PendingIntent.FLAG_CANCEL_CURRENT);
+        if(Globo.toaststate){
+            nbuilder.addAction(R.drawable.icn_message_text, "Toast", pendingToastIntent);
+        }else{
+            nbuilder.addAction(R.drawable.icn_message, "Toastless", pendingToastIntent);
+        }
 
 
 
+        Notification status = nbuilder.build();
         status.flags |= Notification.FLAG_ONGOING_EVENT;
 
         status.contentIntent = PendingIntent.getActivity(this.getApplicationContext(), 0, statusintent, PendingIntent.FLAG_UPDATE_CURRENT);

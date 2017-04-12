@@ -6,16 +6,20 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.cratorsoft.android.db.DatabaseHelper;
+import com.cratorsoft.android.events.RefreshToggles;
 import com.cratorsoft.android.language.SCLM;
 import com.cratorsoft.android.ttslanguage.TTSPipeline;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.text.SpannableString;
 import android.widget.Toast;
+
+import org.greenrobot.eventbus.EventBus;
 
 public class Globo {
 
@@ -216,11 +220,31 @@ public class Globo {
              GloboUtil.setBoolean(Globo.ctx, "pref_mutestate", Globo.mutestate);
          }
 
+         refreshToggles();
+
      }
 
 
+     public static void toggleToastState () {
 
+         if(Globo.toaststate){
+             Globo.toaststate = false;
+         }else{
+             Globo.toaststate = true;
+         }
+         GloboUtil.setBoolean(Globo.ctx, "pref_toaststate", Globo.toaststate);
+         refreshToggles();
+     }
 
+     public static void refreshToggles(){
+
+         EventBus.getDefault().post(new RefreshToggles());
+
+         Intent serviceIconUpdate = new Intent(Globo.ctx, IrcRadioService.class);
+         serviceIconUpdate.putExtra("action", "updateicon");
+         Globo.ctx.startService(serviceIconUpdate);
+
+     }
 
 
      //RadioBots

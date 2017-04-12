@@ -24,6 +24,7 @@ import com.cratorsoft.android.confirmback.FragConfirmBackPressed;
 import com.cratorsoft.android.dialog.DlgAbout;
 import com.cratorsoft.android.dialog.DlgInfo;
 import com.cratorsoft.android.drawer.DrawerDisplayer;
+import com.cratorsoft.android.events.RefreshToggles;
 import com.cratorsoft.android.frag.FragAccountList_;
 import com.cratorsoft.android.frag.FragChatLog_;
 import com.cratorsoft.android.frag.FragDrawer;
@@ -40,6 +41,9 @@ import com.earthflare.android.logmanager.LogManager;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.FragmentById;
 import org.androidannotations.annotations.ViewById;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 @EActivity
  public class ActMain extends ActionBarActivity implements DrawerDisplayer, ActConfirmBackPressed {
@@ -138,6 +142,18 @@ import org.androidannotations.annotations.ViewById;
             launchChatlogFromNotification(intent);
         }
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
     }
 
     private void addTopFragmentToStack() {
@@ -411,17 +427,10 @@ import org.androidannotations.annotations.ViewById;
 
      public void toggleSound() {
          Globo.togglemuteTTS();
-         this.invalidateOptionsMenu();
      }
 
      public void toggleToast() {
-         if(Globo.toaststate){
-             Globo.toaststate = false;
-         }else{
-             Globo.toaststate = true;
-         }
-         GloboUtil.setBoolean(this, "pref_toaststate", Globo.toaststate);
-         this.invalidateOptionsMenu();
+        Globo.toggleToastState();
      }
 
      private void editPreferences(){
@@ -459,5 +468,10 @@ import org.androidannotations.annotations.ViewById;
         ft.commit();
 
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(RefreshToggles event) {
+        invalidateOptionsMenu();
+    };
 
 }
