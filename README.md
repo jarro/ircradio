@@ -59,9 +59,6 @@ replaceAllByRegex = requires regex and the text to sub in.   uses  the  String.r
 
 
 
-replaceAllByRegex = calls java's  String.replaceAll  takes regex and a string.
-
-
 
 #### Using Custom Language File
 All language files are copied to public storage on app start if the file does not already exist.
