@@ -159,7 +159,10 @@ public enum MessageQueue {
         }
         LangTable lt = LangMan.INSTANCE.getLangTable(mb.plae.locale);
         // &&  (LangMan.INSTANCE.getLangTable(mb.plae.locale)).blockMessageByUser.contains(mb.sender)
-        if (!testMute() &&  !(LangMan.INSTANCE.getLangTable(mb.plae.locale)).blockMessageByUser.contains(mb.sender)) {
+
+        LangTable langTable = LangMan.INSTANCE.getLangTable(mb.plae.locale);
+
+        if (!testMute() && (langTable == null ? true: !(LangMan.INSTANCE.getLangTable(mb.plae.locale)).blockMessageByUser.contains(mb.sender)))  {
 
             String newmessage;
             if (Globo.pref_replacechat) {
