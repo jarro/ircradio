@@ -8,18 +8,18 @@ buildscript {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
+
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         applicationId "com.earthflare.android.ircradio"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 66
-        versionName "3.2.2"
+        versionName "3.3.0"
     }
 
     buildTypes {
@@ -35,9 +35,12 @@ android {
 
 }
 
+def GooglePlayServicesVersion = '11.8.0'
+def GoogleAppSupportVersion = '25.3.1'
+
 dependencies {
-    apt "org.androidannotations:androidannotations:3.2"
-    compile 'org.androidannotations:androidannotations-api:3.2'
+    annotationProcessor "org.androidannotations:androidannotations:4.3.1"
+    compile 'org.androidannotations:androidannotations-api:4.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -45,13 +48,40 @@ dependencies {
     compile 'com.jpardogo.materialtabstrip:library:1.0.6'
     compile 'com.shamanland:xdroid-toaster:0.0.10'
     compile 'com.google.code.gson:gson:2.7'
-    compile project(':preffrag')
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile "com.android.support:preference-v14:$GoogleAppSupportVersion"
+    compile "com.android.support:preference-v7:$GoogleAppSupportVersion"
 }
 
-apt {
-    arguments {
-        resourcePackageName "com.earthflare.android.ircradio"
-        androidManifestFile variant.outputs[0].processResources.manifestFile
+
+android {
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["resourcePackageName": "com.earthflare.android.ircradio"]
+            }
+        }
     }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            resValue "string", "app_name", "IRC Radio"
+
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            resValue "string", "app_name", "IRC D Radio"
+
+        }
+    }
+    flavorDimensions "versionCode"
+
 }
+
+

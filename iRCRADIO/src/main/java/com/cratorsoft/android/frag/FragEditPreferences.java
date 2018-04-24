@@ -2,9 +2,9 @@ package com.cratorsoft.android.frag;
 
 
 import android.os.Bundle;
-import android.preference.Preference;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.preference.PreferenceFragment;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceFragmentCompat;
 
 
 import com.cratorsoft.android.aamain.Fargs;
@@ -14,13 +14,21 @@ import com.earthflare.android.ircradio.Globo;
 import com.earthflare.android.ircradio.GloboUtil;
 import com.earthflare.android.ircradio.R;
 
-public class FragEditPreferences extends PreferenceFragment implements Preference.OnPreferenceClickListener{
+public class FragEditPreferences extends PreferenceFragmentCompat implements Preference.OnPreferenceClickListener{
+
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        Fargs fargs = Fargs.create(this);
+        addPreferencesFromResource(fargs.getPreferencesResource());
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fargs fargs = Fargs.create(this);
-        addPreferencesFromResource(fargs.getPreferencesResource());
+        //Fargs fargs = Fargs.create(this);
+        //addPreferencesFromResource(fargs.getPreferencesResource());
     }
 
 

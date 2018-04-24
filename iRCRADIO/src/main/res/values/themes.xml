@@ -3,6 +3,7 @@
 
     <style name="RRTheme" parent="Theme.AppCompat">
         <item name="md_dark_theme">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
 </resources>
