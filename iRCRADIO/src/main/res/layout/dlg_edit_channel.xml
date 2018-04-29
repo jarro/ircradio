@@ -65,6 +65,16 @@
                  />
 
 
+            <!-- Row -->
+            <TextView
+                style="@style/textmd_label"
+                android:text="TTS Prefixes" />
+
+            <EditText
+                android:id="@+id/ttsprefixes"
+                style="@style/wfill_hwrap"
+                android:inputType="text" />
+
         </GridLayout>
 
 

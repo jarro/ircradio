@@ -30,7 +30,8 @@ create table channel (_id integer primary key autoincrement,
                       channelpass text default "" not null,
                       joinleave text default "false" not null,
                       autojoin text default "false" not null,
-                      language text default "en" not null                      
+                      language text default "en" not null,
+                      ttsprefixes text default "" not null
                     );                         
 
 insert into account (server, accountname) values ("irc.quakenet.org", "Quakenet");

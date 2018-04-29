@@ -19,7 +19,7 @@ import com.j256.ormlite.support.ConnectionSource;
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
 	public static final String DATABASE_NAME = "ircradio";
-    private static final int DATABASE_VERSION = 10;
+    private static final int DATABASE_VERSION = 11;
 		
 	public DatabaseHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -197,6 +197,13 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             db.execSQL(sql2);
         }
 
+
+		if ( newVersion > 10 && oldVersion < 11) {
+
+			String sql = "Alter table channel add column ttsprefixes text default '' not null";
+			db.execSQL(sql);
+
+		}
 		
 	}
 

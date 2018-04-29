@@ -29,6 +29,8 @@ public class ChannelData {
 	@DatabaseField(canBeNull=false)
 	public String language;
 
+	@DatabaseField(canBeNull=false)
+	public String ttsprefixes;
 
 
 

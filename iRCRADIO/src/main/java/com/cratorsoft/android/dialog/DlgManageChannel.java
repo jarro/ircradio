@@ -86,6 +86,7 @@ public class DlgManageChannel extends DialogFragment {
         fargs.bundle.putString("joinleave", channelData.joinleave);
         fargs.bundle.putString("language", channelData.language);
         fargs.bundle.putString("autojoin", channelData.autojoin);
+        fargs.bundle.putString("ttsprefixes", channelData.ttsprefixes);
 
 
         frag.setArguments(fargs.bundle);
@@ -147,7 +148,7 @@ public class DlgManageChannel extends DialogFragment {
             ((EditText)dlg.getCustomView().findViewById(R.id.channelpass)).setText(fargs.bundle.getString("channelpass"));
             ((CheckBox)dlg.getCustomView().findViewById(R.id.joinleave)).setChecked(Boolean.valueOf(fargs.bundle.getString("joinleave")) );
             ((CheckBox)dlg.getCustomView().findViewById(R.id.autojoin)).setChecked(Boolean.valueOf(fargs.bundle.getString("autojoin")) );
-
+            ((EditText)dlg.getCustomView().findViewById(R.id.ttsprefixes)).setText(fargs.bundle.getString("ttsprefixes"));
         }
 
 
@@ -172,11 +173,13 @@ public class DlgManageChannel extends DialogFragment {
         CheckBox cbJoinLeave = (CheckBox) materialDialog.getCustomView().findViewById(R.id.joinleave);
         Spinner splanguage = (Spinner) materialDialog.getCustomView().findViewById(R.id.language);
         CheckBox cbAutoJoin = ((CheckBox) materialDialog.getCustomView().findViewById(R.id.autojoin));
+        EditText etTtsPrefixes = (EditText) materialDialog.getCustomView().findViewById(R.id.ttsprefixes);
 
         cd.accountid = fargs.getAccount();
         cd.channel = etChannel.getText().toString();
         cd.channelpass = etChannelPass.getText().toString();
         cd.joinleave = String.valueOf(cbJoinLeave.isChecked());
+        cd.ttsprefixes = String.valueOf((etTtsPrefixes.getText().toString()));
         try {
             cd.language = ((TTSLanguage) splanguage.getSelectedItem()).getLanguageForDB();
         }catch(Exception e){

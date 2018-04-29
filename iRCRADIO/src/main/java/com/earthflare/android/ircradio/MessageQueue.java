@@ -150,6 +150,9 @@ public enum MessageQueue {
         }
     }
 
+    public boolean passedWhiteList(String message){
+        return true;
+    }
 
     public boolean standardMessage(MessageBundle mb) {
         boolean playedTTS = false;
@@ -165,10 +168,15 @@ public enum MessageQueue {
         if (!testMute() && (langTable == null ? true: !(LangMan.INSTANCE.getLangTable(mb.plae.locale)).blockMessageByUser.contains(mb.sender)))  {
 
             String newmessage;
-            if (Globo.pref_replacechat) {
-                newmessage = LangMan.INSTANCE.speechReplace(mb.message, mb.plae.locale);
-            } else {
-                newmessage = mb.message;
+
+            if(passedWhiteList(mb.message) ) {
+                if (Globo.pref_replacechat) {
+                    newmessage = LangMan.INSTANCE.speechReplace(mb.message, mb.plae.locale);
+                } else {
+                    newmessage = mb.message;
+                }
+            }else{
+                newmessage = "";
             }
 
             if (newmessage.trim().length() > 0) {
