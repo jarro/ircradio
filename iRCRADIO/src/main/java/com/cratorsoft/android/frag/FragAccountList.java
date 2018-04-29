@@ -210,6 +210,7 @@ public class FragAccountList extends BusyTaskFragment implements ExpandableListV
         mIntent.putExtra("channelpass", "");
         mIntent.putExtra("autojoin", "0");
         mIntent.putExtra("language", "0");
+        mIntent.putExtra("ttsprefixes", "");
 
         mIntent.putExtra("guesscharset", Boolean.valueOf(accountData.guesscharset));
         mIntent.putExtra("reconnect", Boolean.valueOf(accountData.reconnect));
@@ -225,6 +226,7 @@ public class FragAccountList extends BusyTaskFragment implements ExpandableListV
         mIntent.putExtra("channelpass",channelData.channelpass);
         mIntent.putExtra("joinleave",channelData.joinleave);
         mIntent.putExtra("language", channelData.language);
+        mIntent.putExtra("ttsprefixes", channelData.ttsprefixes);
 
         return mIntent;
 

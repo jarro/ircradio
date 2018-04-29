@@ -43,8 +43,11 @@ public class BotManager {
 		boolean reconnect = intent.getBooleanExtra("reconnect", false);
 		boolean ssl = intent.getBooleanExtra("ssl", false);
 		String language = intent.getStringExtra("language");
-		
-		
+		String ttsprefixes = intent.getStringExtra("ttsprefixes");
+		if (ttsprefixes == null){
+			ttsprefixes = "";
+		}
+
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(ctx);
 		if (nick.equals("") ) { nick = ( preferences.getString("pref_nick", "droid") );}
 		
@@ -53,6 +56,7 @@ public class BotManager {
 		channelinfo.put("channelpass", channelpass);
 		channelinfo.put("joinleave", joinleave);						
 		channelinfo.put("language", language);
+		channelinfo.put("ttsprefixes", ttsprefixes);
 		
 		if (ircBots.containsKey(accountid)) {
 		    RadioBot rb = ircBots.get(accountid) ;

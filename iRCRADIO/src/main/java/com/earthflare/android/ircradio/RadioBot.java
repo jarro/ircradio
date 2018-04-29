@@ -1,6 +1,7 @@
 package com.earthflare.android.ircradio;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -396,19 +397,57 @@ protected void onPrivateMessage(String sender, String login, String hostname,
 
   
   public void onMessage(String channel, String sender, String login, String hostname, String message) {
-     	  
+
+  	  D.D("MESSAGE:: " + message);
 	  
 	  LogManager.writeChannelLog(MessageType.STANDARD, sender, "<" + sender + "> " + message,botID,channel, accountName, ctx, false, this.getNick());    
 	  
-	  
-	  
-	  if (Globo.voiceServer == botID && channel.equals(Globo.voiceChannel) && Globo.ttsspeak_message ) {  
-	        queueStandardMessage(sender,  message, SCLM.INSTANCE.getChannelPLAE(botID, channel) );
+	  String ttsPrefixedMessage = applyTTSPrefixes(channel, message);
+	  if (ttsPrefixedMessage.length() > 0 && Globo.voiceServer == botID && channel.equals(Globo.voiceChannel) && Globo.ttsspeak_message  ) {
+
+	        queueStandardMessage(sender,  ttsPrefixedMessage, SCLM.INSTANCE.getChannelPLAE(botID, channel) );
 	  }
 	  
 	  
   }
 
+  private String applyTTSPrefixes (String channel, String message){
+
+
+	  Map<String,String> channelinfo = channelMap.get(channel);
+	  String ttsprefixes = channelinfo.get("ttsprefixes");
+	  if (ttsprefixes == null){
+	  	ttsprefixes = "";
+	  }
+
+	  if (ttsprefixes.length() == 0){
+	  	return message;
+	  }else{
+
+		//test against prefixes
+		 String[] arrayPrefixes = ttsprefixes.split(",");
+
+		 boolean matched = false;
+
+		 for (int i = 0; i < arrayPrefixes.length;  i++){
+
+			 if (message.startsWith(arrayPrefixes[i])){
+				if (i == 0){
+					return message.substring(arrayPrefixes[0].length());
+				}else{
+					return message;
+				}
+			 }
+
+		 }
+
+
+	  }
+
+	  return "";
+
+
+  }
 
   
   
@@ -878,6 +917,7 @@ private void addautojoins() {
 	String channel;
 	String joinleave;
 	String language;
+	String ttsprefixes;
 	
 	while (c.moveToNext() ) {
 	      
@@ -885,12 +925,14 @@ private void addautojoins() {
 	      channel = c.getString(2).toLowerCase();	      
 	      joinleave = c.getString(4);	      
 	      language = c.getString(6);
+	      ttsprefixes = c.getString(7);
 	      
 	      //add channelinfo to join channel
 	      Map<String,String> channelinfo = new HashMap<String,String>();
 			channelinfo.put("channelpass", channelpass);
 			channelinfo.put("joinleave", joinleave);						
 			channelinfo.put("language", language);
+			channelinfo.put("ttsprefixes", ttsprefixes);
 	        channelMap.put(channel,channelinfo);
 	}
 	

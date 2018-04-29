@@ -193,6 +193,7 @@ public class ActWebView extends TemplateWebView  {
             radioServiceIntent.putExtra("channelpass",channelpass);
             radioServiceIntent.putExtra("joinleave",joinleave);
             radioServiceIntent.putExtra("accountid", eventid);
+			radioServiceIntent.putExtra("ttsprefixes", "");
             
             Message msg = new Message();
             Bundle data = new Bundle();
